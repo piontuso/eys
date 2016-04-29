@@ -4,3 +4,9 @@ test_page:
         _controller: Drupal\m_learning\Controller\TestController::content
     requirements:
         _permission: 'access content'
+form_page:
+    path: /example/form
+    defaults:
+        _controller: Drupal\m_learning\Controller\TestController::exampleForm
+    requirements:
+        _permission: 'access content'
