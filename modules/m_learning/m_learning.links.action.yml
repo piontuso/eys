@@ -1,0 +1,6 @@
+entity.welcome_entity.add_form:
+  route_name: 'entity.welcome_entity.add_form'
+  title: 'Add Welcome entity'
+  appears_on:
+    - entity.welcome_entity.collection
+

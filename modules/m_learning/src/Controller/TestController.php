@@ -29,7 +29,10 @@ class TestController extends ControllerBase
     $this->loggerChannelFactory->get('default')
       ->debug($response);
 
-    return new Response($response);
+    return array(
+      '#title' => t('Welcome'),
+      '#markup' => $response,
+    );
   }
 
   /**

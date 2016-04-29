@@ -1,0 +1,8 @@
+# Welcome entity menu items definition
+entity.welcome_entity.collection:
+  title: 'Welcome entity'
+  route_name: entity.welcome_entity.collection
+  description: 'List Welcome entity (bundles)'
+  parent: system.admin_structure
+  weight: 99
+
