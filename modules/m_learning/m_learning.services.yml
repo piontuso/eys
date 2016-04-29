@@ -1,0 +1,14 @@
+parameters:
+    m_learning.welcome.use_key_value_cache: true
+
+services:
+    m_learning.welcome_generator:
+        class: Drupal\m_learning\Welcome\WelcomeGenerator
+        arguments:
+            - '@keyvalue'
+            - %m_learning.welcome.use_key_value_cache%
+    m_learning.welcome_listener:
+        class: Drupal\m_learning\Welcome\WelcomeListener
+        arguments: ['@logger.factory']
+        tags:
+            - {name: event_subscriber}

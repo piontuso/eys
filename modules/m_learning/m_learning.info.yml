@@ -1,0 +1,5 @@
+name: M learning
+type: module
+description: "Drupal 8 learning"
+package: learning
+core: 8.x
