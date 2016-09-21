@@ -4,3 +4,19 @@ entity.welcome_entity.add_form:
   appears_on:
     - entity.welcome_entity.collection
 
+entity.d_product_slider.add_form:
+  route_name: 'd_product_slider.add_page'
+  title: 'Add Product slider'
+  appears_on:
+    - entity.d_product_slider.collection
+entity.d_product_slider_type.add_form:
+  route_name: 'entity.d_product_slider_type.add_form'
+  title: 'Add Product slider type'
+  appears_on:
+    - entity.d_product_slider_type.collection
+
+entity.dealers_entity.add_form:
+  route_name: entity.dealers_entity.add_form
+  title: 'Add Dealers entity'
+  appears_on:
+    - entity.dealers_entity.collection

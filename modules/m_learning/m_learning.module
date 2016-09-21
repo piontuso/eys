@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Contains m_learning.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function m_learning_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the m_learning module.
+    case 'help.page.m_learning':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function m_learning_theme() {
+  $theme = [];
+  $theme['d_product_slider'] = [
+    'render element' => 'elements',
+    'file' => 'd_product_slider.page.inc',
+    'template' => 'd_product_slider',
+  ];
+  $theme['d_product_slider_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'd_product_slider.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function m_learning_theme_suggestions_d_product_slider(array $variables) {
+  $suggestions = array();
+  $entity = $variables['elements']['#d_product_slider'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'd_product_slider__' . $sanitized_view_mode;
+  $suggestions[] = 'd_product_slider__' . $entity->bundle();
+  $suggestions[] = 'd_product_slider__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'd_product_slider__' . $entity->id();
+  $suggestions[] = 'd_product_slider__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

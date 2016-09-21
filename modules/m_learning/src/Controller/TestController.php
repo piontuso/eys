@@ -37,14 +37,9 @@ class TestController extends ControllerBase {
   }
 
   public function exampleForm() {
-    $form_state = new FormState();
-    $form = $this->formBuilder->buildForm('m_learning_welcome', $form_state);
-
     $form = \Drupal::formBuilder()->getForm('Drupal\m_learning\Form\WelcomeForm');
-    return array(
-      '#title' => t('Example form'),
-      '#markup' => $form,
-    );
+
+    return $form;
   }
 
   /**

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains d_forms.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function d_forms_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the d_forms module.
+    case 'help.page.d_forms':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Forms') . '</p>';
+      return $output;
+
+    default:
+  }
+}

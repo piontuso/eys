@@ -1,0 +1,12 @@
+m_learning.d_product_slider_type.*:
+  type: config_entity
+  label: 'Product slider type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

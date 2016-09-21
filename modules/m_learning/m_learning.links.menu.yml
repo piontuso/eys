@@ -6,3 +6,32 @@ entity.welcome_entity.collection:
   parent: system.admin_structure
   weight: 99
 
+# Product slider menu items definition
+entity.d_product_slider.collection:
+  title: 'Product slider list'
+  route_name: entity.d_product_slider.collection
+  description: 'List Product slider entities'
+  parent: system.admin_structure
+  weight: 100
+
+# Product slider type menu items definition
+entity.d_product_slider_type.collection:
+  title: 'Product slider type'
+  route_name: entity.d_product_slider_type.collection
+  description: 'List Product slider type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+
+# Dealers entity menu items definition
+entity.dealers_entity.collection:
+  title: 'Dealers entity list'
+  route_name: entity.dealers_entity.collection
+  description: 'List Dealers entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+dealers_entity.admin.structure.settings:
+  title: Dealers entity settings
+  description: 'Configure Dealers entity entities'
+  route_name: dealers_entity.settings
+  parent: system.admin_structure

@@ -1,0 +1,38 @@
+# Product slider routing definition
+entity.d_product_slider.canonical:
+  route_name: entity.d_product_slider.canonical
+  base_route: entity.d_product_slider.canonical
+  title: 'View'
+
+entity.d_product_slider.edit_form:
+  route_name: entity.d_product_slider.edit_form
+  base_route: entity.d_product_slider.canonical
+  title: Edit
+
+entity.d_product_slider.delete_form:
+  route_name:  entity.d_product_slider.delete_form
+  base_route:  entity.d_product_slider.canonical
+  title: Delete
+  weight: 10
+
+# Dealers entity routing definition
+dealers_entity.settings_tab:
+  route_name: dealers_entity.settings
+  title: 'Settings'
+  base_route: dealers_entity.settings
+entity.dealers_entity.canonical:
+  route_name: entity.dealers_entity.canonical
+  base_route: entity.dealers_entity.canonical
+  title: 'View'
+
+entity.dealers_entity.edit_form:
+  route_name: entity.dealers_entity.edit_form
+  base_route: entity.dealers_entity.canonical
+  title: Edit
+
+entity.dealers_entity.delete_form:
+  route_name:  entity.dealers_entity.delete_form
+  base_route:  entity.dealers_entity.canonical
+  title: Delete
+  weight: 10
+

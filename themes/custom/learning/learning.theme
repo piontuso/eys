@@ -1,0 +1,7 @@
+<?php
+
+function learning_preprocess(&$variables, $hook) {
+  if ($hook == 'node') {
+    xdebug_break();
+  }
+}

@@ -1,0 +1,38 @@
+add product slider entities:
+  title: 'Create new Product slider entities'
+
+administer product slider entities:
+  title: 'Administer Product slider entities'
+  description: 'Allow to access the administration form to configure Product slider entities.'
+  restrict access: true
+
+delete product slider entities:
+  title: 'Delete Product slider entities'
+
+edit product slider entities:
+  title: 'Edit Product slider entities'
+
+view published product slider entities:
+  title: 'View published Product slider entities'
+
+view unpublished product slider entities:
+  title: 'View unpublished Product slider entities'
+add dealers entity entities:
+  title: 'Create new Dealers entity entities'
+
+administer dealers entity entities:
+  title: 'Administer Dealers entity entities'
+  description: 'Allow to access the administration form to configure Dealers entity entities.'
+  restrict access: true
+
+delete dealers entity entities:
+  title: 'Delete Dealers entity entities'
+
+edit dealers entity entities:
+  title: 'Edit Dealers entity entities'
+
+view published dealers entity entities:
+  title: 'View published Dealers entity entities'
+
+view unpublished dealers entity entities:
+  title: 'View unpublished Dealers entity entities'
